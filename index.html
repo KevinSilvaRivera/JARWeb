@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JAR - Comunicaciones</title>
+    <link rel="stylesheet" href="CSS/style.css">
+    <link rel="icon" href="img/logo.png" type="image/x-icon">
+    <script async src="https://maps.googleapis.com/maps/api/js?key=AIzaSyC66sIPzea7QZmcXb8R4NC23f9pn1FdPQg&callback=console.debug&libraries=maps,marker&v=beta"></script>
+</head>
+
+<body>
+    <div id="menu-overlay" class="hidden"></div>
+
+    <!-- Encabezado -->
+    <header>
+        <div class="logo">
+            <img class="icon" src="img/logo-2.png" alt="Logo de JAR">
+        </div>
+
+        <!-- Agregar un botón de menú -->
+        <input type="checkbox" id="menu-toggle" class="hidden">
+        <label for="menu-toggle" class="menu-icon">&#9776;</label>
+
+        <nav>
+            <ul>
+                <li><a href="#servicios">Servicios</a></li>
+                <li><a href="#planes">Planes</a></li>
+                <li><a href="#contacto">Contacto</a></li>
+                <li><a href="#tramites">Trámites</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Servicios -->
+    <section id="servicios">
+        <div class="contenido-servicios">
+            <div class="texto-servicios">
+                <h2>Nuestros Servicios</h2>
+                <p>En JAR Comunicaciones, ofrecemos una amplia gama de servicios de Internet para satisfacer tus necesidades de
+                    conectividad.</p>
+                <ul>
+                    <li>Servicio de Internet de alta velocidad</li>
+                    <li>Conexiones seguras y estables</li>
+                    <li>Soporte técnico 24/7</li>
+                    <li>Planes flexibles y asequibles</li>
+                </ul>
+            </div>
+            <div class="imagen-servicios">
+                <img src="img/servicios.jpg" alt="Imagen de servicios">
+            </div>
+        </div>
+    </section>
+
+    <!--Planes-->
+    <section id="planes">
+        <h2>Nuestros Planes</h2>
+        <div class="planes-container">
+            <div class="plan">
+                <img src="img/plan_basico.jpg" alt="Plan Básico">
+                <h3>Plan Básico</h3>
+                <p>Velocidad: 5 Mbps</p>
+                <p>Precio: $250/mes</p>
+                <p><span>Contrato: $1500</span></p>
+                <a href="https://wa.me/5219631214548" target="_blank">¡Solicitar Ahora!</a>
+            </div>
+
+            <div class="plan">
+                <img src="img/plan_avanzado.jpg" alt="Plan Avanzado">
+                <h3>Plan Avanzado</h3>
+                <p>Velocidad: 10 Mbps</p>
+                <p>Precio: $350/mes</p>
+                <p><span>Contrato: $1500</span></p>
+                <a href="https://wa.me/5219631214548" target="_blank">¡Solicitar Ahora!</a>
+            </div>
+        </div>
+    </section>
+
+    <!--Video -->
+    <section id="video">
+        <h2>Descubre más sobre JAR Comunicaciones</h2>
+        <div class="video-container">
+            <!-- Inserta el video de YouTube -->
+            <iframe width="1013" height="574" src="https://www.youtube.com/embed/HzBlF4ytIPU"
+                title="FRESH (Slowed + Reverb)" frameborder="0"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+        </div>
+        <figcaption><p><strong><em>Video de prueba</em></strong></p></figcaption>
+    </section>
+
+     <!--Tramites -->
+     <section id="tramites" style="padding: 50px;">
+        <div class="container">
+            <h2 style="text-align: center; margin-bottom: 30px;">Trámites</h2>
+            <div class="table-container">
+                <table>
+                    <thead>
+                        <tr>
+                            <th>TRÁMITE</th>
+                            <th>REQUISITOS</th>
+                            <th>MEDIO PARA REALIZARLO</th>
+                            <th>QUIÉN PUEDE REALIZARLO</th>
+                            <th>COSTO</th>
+                            <th>DURACIÓN</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>Cancelación del servicio</td>
+                            <td>
+                                <ul>
+                                    <li>Identificación vigente (INE, pasaporte, etc.)</li>
+                                    <li>Copia del contrato</li>
+                                    <li>Última factura de pago</li>
+                                </ul>
+                            </td>
+                            <td>Presencial / En línea / Por teléfono</td>
+                            <td>El titular o mediante carta poder sencilla con copia de la INE del titular</td>
+                            <td>Gratuito</td>
+                            <td>24 horas (días hábiles)</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </section>
+
+    <!--Contacto -->
+    <section id="contacto">
+        <h2>Contacto</h2>
+        <p>¿Listo para comenzar? Contáctanos hoy mismo para obtener más información sobre nuestros servicios.</p>
+        <p>Teléfono: <a class="telefono" href="https://wa.me/5219631214548" target="_blank">5219631214548</a></p>
+        <p>Correo electrónico: <a class="correo" href="mailto:info@jarCo.com" target="_blank">info@JarComunicaciones.com</a></p>
+        <a href="https://wa.me/5219631214548" target="_blank">¡Contáctanos Ahora!</a>
+        <br>
+        <a href="PDF/Ejemplo de PDF.pdf" target="_blank">Abrir PDF</a>
+    </section>
+
+    <!--Mapa-->
+    <section class="maps">
+        <h2>Nuestras Oficinas</h2>
+        <gmp-map center="16.249730778352298,-92.01536840608557" zoom="14" map-id="DEMO_MAP_ID">
+            <gmp-advanced-marker position="16.249730778352298,-92.01536840608557"
+                title="My location"></gmp-advanced-marker>
+        </gmp-map>
+    </section>
+
+    <!-- Pie de página -->
+    <footer>
+        <div class="footer-links">
+            <ul>
+                <li><a href="terminos.html" target="_blank">Términos y condiciones</a></li>
+                <li><a href="privacidad.html" target="_blank">Aviso de privacidad</a></li>
+            </ul>
+        </div>
+        <p>Derechos de autor © 2024 JAR - COMUNICACIONES. Todos los derechos reservados.</p>
+    </footer>
+
+    <!-- Menu de navegación -->
+    <script src="scrip.js"></script>
+    <script>
+        document.addEventListener("DOMContentLoaded", function () {
+            var menuToggle = document.getElementById("menu-toggle");
+            var navLinks = document.querySelectorAll("nav ul li a");
+            var menuOverlay = document.getElementById("menu-overlay");
+
+            // Función para cerrar el menú cuando se hace clic en un enlace de navegación
+            function closeMenu() {
+                menuToggle.checked = false;
+                menuOverlay.classList.add('hidden');
+            }
+
+            // Agregar evento de clic a cada enlace de navegación
+            navLinks.forEach(function (link) {
+                link.addEventListener("click", closeMenu);
+            });
+
+            menuOverlay.addEventListener('click', function () {
+                menuToggle.checked = false;
+                menuOverlay.classList.add('hidden');
+            });
+        });
+    </script>
+</body>
+</html>
